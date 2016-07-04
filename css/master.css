@@ -1,0 +1,83 @@
+#general_container {
+  height: 700px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  padding-top: 8%;
+  max-width: 800px;
+}
+
+.cards_backgroud {
+  background-image: url('../img/back.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.card{
+  height: 100px;
+  width: 70px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 10px;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.back_card {
+  position: absolute;
+  background-image: url("../img/card_back.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  transform: perspective(200px);
+  backface-visibility: hidden;
+
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.front_card {
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+  transform: perspective(200px);
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+
+.boy { background-image: url("../img/boy_card.png"); }
+.bird { background-image: url("../img/bird_card.png"); }
+.dragon { background-image: url("../img/dragon_card.png"); }
+.fish { background-image: url("../img/fish_card.png"); }
+.house { background-image: url("../img/house_card.png"); }
+.lion { background-image: url("../img/lion_card.png"); }
+.pirate { background-image: url("../img/pirate_card.png"); }
+.ship { background-image: url("../img/ship_card.png"); }
+.sun { background-image: url("../img/sun_card.png"); }
+.tree { background-image: url("../img/tree_card.png"); }
+.turtle { background-image: url("../img/turtle_card.png"); }
+.woman { background-image: url("../img/woman_card.png"); }
+
+
+#victory_text {
+  background-image: url("../img/victory.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  width: 700px;
+  height: 400px;
+}
